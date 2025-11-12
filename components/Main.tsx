@@ -11,16 +11,14 @@ export const Main: React.FC<{
             <div className="px-4 pb-2 pt-2">
                 <h1 className='font-bold text-gray-700' style={{
                 }}>
-                    <A href="https://nyaw.net" inSite>
+                    <A href="https://nyaw.net" inSite
+                        className="visited:text-blue-600">
                         nyaw.net
                     </A>
                     </h1>
             </div>
 
             <div className="px-4 mt-16 pb-24">
-
-               
-
 
                 <div className='pb-12'>
                     <div className="text-2xl mb-6" style={{
