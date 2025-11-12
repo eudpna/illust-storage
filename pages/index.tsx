@@ -8,6 +8,7 @@ const Index: React.FC<{}> = () => {
         <Head>
             <title>イラスト保管庫 | nyaw.net</title>
             <meta name="robots" content="noindex" />
+            <meta name="robots" content="nofollow" />
         </Head>
         <div className="" lang="ja">
             <Main/>
