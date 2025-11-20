@@ -8,14 +8,20 @@ export const Main: React.FC<{
     return <div>
         <div className="max-w-xl mx-auto">
 
-            <div className="px-4 pb-2 pt-2">
-                <h1 className='font-bold text-gray-700' style={{
+            <div className="px-4 pb-2 pt-2 flex">
+                <h1 className='font-bold text-gray-700 flex-1' style={{
                 }}>
                     <A href="https://nyaw.net" inSite
                         className="visited:text-blue-600">
                         nyaw.net
                     </A>
-                    </h1>
+                </h1>
+                <div className="text-right flex-1">
+                    <A href="https://github.com/eudpna/illust-storage" 
+                        className="visited:text-blue-600">
+                        GitHub
+                    </A>
+                </div>
             </div>
 
             <div className="px-4 mt-16 pb-24">
