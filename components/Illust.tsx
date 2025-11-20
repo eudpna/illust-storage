@@ -3,11 +3,12 @@ import { A } from "./A"
 
 export const Illust: React.FC<{
     filename: string
+    filenameShort: string
     date: string
     name: string
 }> = (props) => {
-    const { filename, date, name } = props
+    const { filename, filenameShort, date, name } = props
     return <div>
-        <A inSite href={'images/illusts/'+filename}>{date+' '+name}</A>
+        <A inSite href={'images/illusts/' + filenameShort}>{date+' '+name}</A>
     </div>
 }

@@ -1,5 +1,5 @@
 import { Illust } from "./Illust"
-import imgList from '../script/list/imgList.json'
+import imgList from '../script/src/imgList.json'
 import { A } from "./A"
 
 
