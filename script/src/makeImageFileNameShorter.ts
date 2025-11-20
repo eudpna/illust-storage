@@ -2,10 +2,9 @@ import fs from 'fs'
 import path from 'path'
 
 // illuts-storageの使い方
-// まず /public/images/illusts を空にする。
-// 次にイラストを /script/src/illutsts に入れる。
+// まずイラストを /script/src/illutsts に入れる。
 // cd script する。
-// その後、このスクリプト(makeImageFileNameShorter.ts)を実行する。
+// その後、makeImageFileNameShorter.tsを実行する。
 // npx ts-node src/makeImageFileNameShorter.ts
 // その後、getImageList.tsを実行する。
 // npx ts-node src/getImageList.ts
@@ -20,6 +19,9 @@ const targetDir = path.join(process.cwd(), '../public/images/illusts')
 
 
 function makeImageFileNameShorter() {
+    // ディレクトリ内をクリア
+    fs.rmdirSync(targetDir, { recursive: true } as any);
+    fs.mkdirSync(targetDir)
 
     const files = fs.readdirSync(srcDir)
 

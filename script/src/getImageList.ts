@@ -2,8 +2,7 @@ import fs from 'fs'
 import path, { resolve } from 'path'
 
 // illuts-storageの使い方
-// まず /public/images/illusts を空にする。
-// 次にイラストを /script/src/illutsts に入れる。
+// まずイラストを /script/src/illutsts に入れる。
 // cd script する。
 // その後、makeImageFileNameShorter.tsを実行する。
 // npx ts-node src/makeImageFileNameShorter.ts
